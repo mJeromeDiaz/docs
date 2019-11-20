@@ -10,7 +10,7 @@ Create a Quasar Framework application using
 
 In the app directory, generate the files for the resource you want:
 
-    $ generate-api-platform-client -g quasar https://demo.api-platform.com src/ --resource foo
+    $ npx @api-platform/client-generator -g quasar https://demo.api-platform.com src/ --resource foo
     # Replace the URL by the entrypoint of your Hydra-enabled API
     # Omit the resource flag to generate files for all resource types exposed by the API
 
@@ -63,7 +63,8 @@ framework: {
     'QDate',
     'QTime',
     'QCheckbox',
-    'QPopupProxy'
+    'QPopupProxy',
+    
 
     ...
   ],
